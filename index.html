@@ -11,29 +11,34 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__nav">
       <img 
         src="./images/logo.svg" 
         alt="This is the logo for the company named Netbook..." 
+        width="145"
+        height="35"
       />
 
-      <nav>
+      <nav class="header__nav">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="#" class="active">Home</a></li>
           <li><a href="#">Community</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Events</a></li>
         </ul>
       </nav>
-    </div>
 
-    <div>
-      <input type="search" />
-      <a href="/login">Log in</a>
+    <div class="header__actions">
+      <form class="header__search" action="">
+        <img src="./images/ico-search.svg" alt="Magnify glass icon for search" width="16" height="16" />
+        <input type="search" aria-label="search" placeholder="Search Here..." />
+      </form>
+      <a href="/login" class="btn">Log in</a>
     </div>
   </header>
   <main>
-    <section class="hero"></section>
+    <section class="hero">
+      <p>Hello World</p>
+    </section>
     <div class="clients"></div>
     <section class="whats-netboks"></section>
     <section class="community"></section>
