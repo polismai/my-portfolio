@@ -97,6 +97,10 @@ a {
   line-height: 1;
 }
 
+.btn svg {
+  margin-left: 1rem;
+}
+
 .btn__secondary {
   background-color: transparent;
   border: solid 1px var(--color-primary);
@@ -106,6 +110,19 @@ a {
 .btn--large {
   height: 64px;
   padding: 0 48px;
+}
+
+h2.section__title {
+  font-size: 1.125rem;
+  color: var(--color-primary);
+}
+
+p.section__subtitle {
+  color: var(--color-heading);
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.33;
+  margin-bottom: 1rem;
 }
 
 .container {
@@ -213,17 +230,6 @@ a {
   margin: 6rem auto;
 }
 
-.whats-netboks__content h2 {
-  font-size: 1.125rem;
-  color: var(--color-primary);
-}
-
-.whats-netboks__content h3 {
-  font-size: 2.25rem;
-  line-height: 1.33;
-  margin-bottom: 1rem;
-}
-
 .whats-netboks__content p {
   margin-bottom: 2rem;
 }
@@ -275,6 +281,7 @@ a {
   display: grid;
   grid-template-columns: 340px 340px 1fr;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .achievement .card {
@@ -286,11 +293,6 @@ a {
 }
 
 .achievement .card a {
-  position: relative;
-  padding-right: 20px;
-}
-
-.achievement .card a {
   display: inline-flex;
   gap: 0.5rem;
   align-items: center;
@@ -298,6 +300,10 @@ a {
 
 .achievement .card a:hover {
   color: var(--color-primary);
+}
+
+.achievement .card a:hover svg path {
+  stroke: var(--color-primary);
 }
 
 .achievement .card:hover {
@@ -317,9 +323,20 @@ a {
   margin-bottom: 2rem;
 }
 
+.achievement__content {
+  margin-inline-start: auto;
+  width: 380px;
+}
+
+.achievement__content p:not(.section__subtitle) {
+  margin-bottom: 2rem;
+}
+
 .card.rating .card__title, .card.awards .card__title {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 2rem;
 }
+
+
 
