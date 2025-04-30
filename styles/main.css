@@ -288,6 +288,7 @@ p.section__subtitle {
   grid-template-columns: 340px 340px 1fr;
   gap: 1.5rem;
   align-items: center;
+  margin-bottom: 96px;
 }
 
 .achievement .card {
@@ -392,5 +393,78 @@ p.section__subtitle {
 .community__scroll .community__card-icon {
   background: linear-gradient(154.49deg, #ffd085 6.61%, #ffaf2e 89.72%);
   box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3);
+}
+
+.team__content {
+  width: 28.125rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team__tabs {
+  background-color: var(--color-primary-10);
+  width: 28.125rem;
+  margin: 2.5rem auto;
+  display: flex;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.team__tab {
+  height: 3.5rem;
+  display: inline-flex;
+  padding: 0 2rem;
+  align-items: center;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.team__tab:hover {
+  color: var(--color-primary);
+}
+
+.team__tab--active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.team__members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.team__member-card {
+  text-align: center;
+  border: solid 1px #F3F3F3;
+  border-radius: 1rem;
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  padding: 2rem;
+}
+
+.team__member-card:hover {
+  box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.24);
+  transform: translate(-4px, -4px);
+}
+
+.team__member-picture {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.team__member-avatar {
+  position: relative;
+  display: inline-block;
+}
+
+.team__member-name {
+  font-size: 1.5rem;
+
 }
 
